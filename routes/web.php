@@ -13,3 +13,4 @@
 
 
 Route::get('/', 'IndexController@index');
+Route::get('pag1', 'IndexController@pag1');

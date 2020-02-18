@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -9,7 +8,7 @@
 
      </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
       <div class="container">
         <div class="navbar-header">
            <a class="navbar-brand" href="#">Project name</a>
@@ -26,3 +25,11 @@
          </div>
        </div>
     </nav>
+
+@yield('content')
+
+   <footer class="container">
+  <p>&copy; 2020 Company, Inc.</p>
+</footer>
+</body>
+</html>
