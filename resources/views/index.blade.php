@@ -25,7 +25,7 @@
         <h2>{{$article->title}}</h2>
         <p><img style="width: 250px;" src="{{$article->img}}"></p>
         <p>{{$article->description}}</p>
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="{{ route('articleShow',['id'=>$article->id])}} "role="button">View details &raquo;</a></p>
       </div>
 
 @endforeach
