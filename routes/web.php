@@ -15,3 +15,5 @@
 Route::get('/', 'IndexController@index');
 Route::get('pag1', 'IndexController@pag1');
 Route::get('/article/{id}', 'IndexController@show')->name('articleShow');
+Route::get('page/add', 'IndexController@add');
+Route::post('page/add', 'IndexController@store')->name('articleStore');
