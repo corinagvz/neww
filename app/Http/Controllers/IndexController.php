@@ -55,4 +55,12 @@ public function store( Request $request) {
 }
 
 
+
+  public function admin(){
+
+        $articles=Article::select(['id','title','description','img'])->get();
+
+        return view('admin')->with(['h'=>$this->h,'t'=>$this->t,'articles'=>$articles]);
+    }
+
 }
